@@ -1,32 +1,27 @@
 <template>
-  <div class="home">
-    <Header />
+  <div>
+    <p class="Head">
+      Welcome to the THK's world
+    </p>
     <nuxt />
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header'
-
-export default {
-  components: {
-    Header,
-  },
-}
+export default {}
 </script>
 
 <style>
 html {
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  box-sizing: border-box;
+  background-color: #ffc97f;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+.Head {
+  display: flex;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Verdana, sans-serif;
+  font-size: 70px;
+  color: #12605e;
+  justify-content: center;
 }
 </style>

@@ -17,7 +17,7 @@ import Card from '@/components/Card'
 export default {
   components: { CardList, Card },
   setup(_, ctx) {
-    const posts = useAsync(async () => await ctx.root.$content('posts').fetch())
+    const posts = useAsync(async () => await ctx.root.$content('blog').fetch())
 
     return { posts }
   },

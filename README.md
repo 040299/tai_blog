@@ -1,4 +1,4 @@
-# ju-diary
+# tai_blog
 
 ## Build Setup
 

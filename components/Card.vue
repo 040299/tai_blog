@@ -3,7 +3,7 @@
     <h1 class="title">{{ title }}</h1>
     <span class="spacing" />
     <p>{{ description }}</p>
-    <a class="read-more">อ่านต่อ..</a>
+    <a class="read-more">อ่านต่อ...</a>
   </div>
 </template>
 
@@ -16,10 +16,6 @@ export default {
     title: {
       type: String,
       default: '',
-    },
-    tag: {
-      type: String,
-      default: 'code',
     },
     description: {
       type: String,
@@ -45,6 +41,7 @@ export default {
   padding: 0.8rem;
   display: flex;
   flex-direction: column;
+  background-color: white;
 
   > .title {
     font-size: 1.2rem;
@@ -55,7 +52,7 @@ export default {
   }
 
   > .spacing {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   > .description {
@@ -66,14 +63,14 @@ export default {
     position: absolute;
     right: 0;
     bottom: 0;
-    color: red;
+    color: yellowgreen;
     cursor: pointer;
     margin: 0.4rem;
   }
 
   > .read-more:hover {
     font-style: italic;
-    color: gray;
+    color: lightgrey;
   }
 }
 </style>
